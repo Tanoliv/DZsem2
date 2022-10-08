@@ -1,11 +1,11 @@
 ﻿//Программа выводит третью цифру выданного числа, или объявляет что ее нет.
 //
 
-//Console.WriteLine("Введите число:"); 
-//int num = new Random().Next(100000);
-
 Console.WriteLine("Введите число:"); 
-int num = int.Parse(Console.ReadLine()!);
+int num = new Random().Next(100000);
+
+//Console.WriteLine("Введите число:"); 
+//int num = int.Parse(Console.ReadLine()!);
 int num1 = num;
 void ChisloTree (int num){
 if (num > 1 && num < 100){
@@ -16,6 +16,8 @@ if (num > 99 && num < 1000){
 num1 = num % 10;
 Console.WriteLine($"{num} => {num1}");
 }
+
+
 
 if (num>999 && num < 10000){
 num1 = num /10 % 10;
